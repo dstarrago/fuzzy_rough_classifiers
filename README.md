@@ -37,8 +37,8 @@ Using the framework, you first need to declare the variables involve in the math
 </code></pre>
 
 Usage cases:
-- Vluymans, S., Sanchez Tarrago, D., Saeys, Y., Cornelis, C., Herrera, F.: Fuzzy Multi-Instance Classifiers. IEEE Transactions on Fuzzy Systems. 24, 1395–1409 (2016). <a href="https://ieeexplore.ieee.org/document/7378303">(link)</a>
-- Vluymans, S., Sanchez Tarrago, D., Saeys, Y., Cornelis, C., Herrera, F.: Fuzzy rough classifiers for class imbalanced multi-instance data. Pattern Recognition. 53, 36–45 (2016). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320315004446">(link)</a>
+- Vluymans, S., Sanchez Tarrago, D., Saeys, Y., Cornelis, C., Herrera, F.: Fuzzy Multi-Instance Classifiers. IEEE Transactions on Fuzzy Systems. 24, 1395–1409 (2016). <a href="https://ieeexplore.ieee.org/document/7378303" target="_blank">(link)</a>
+- Vluymans, S., Sanchez Tarrago, D., Saeys, Y., Cornelis, C., Herrera, F.: Fuzzy rough classifiers for class imbalanced multi-instance data. Pattern Recognition. 53, 36–45 (2016). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320315004446" target="_blank">(link)</a>
 
 Developed with:
 - Java 1.8
