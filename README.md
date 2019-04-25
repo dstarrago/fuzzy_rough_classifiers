@@ -10,7 +10,7 @@ The framework facilitates the design of multiple-instance classification algorit
 - aggregators that iterate over, for example, all instances in a bag, or a set of bags, applying a numerical operation on them
 - weighting schemes for weighted average aggregation
 - bag membership and class membership functions
-- variables
+- literal variables representing a cardinal number, an instance, a bag or a set of bags
 
 Usage example:
 
