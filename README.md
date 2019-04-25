@@ -22,12 +22,12 @@ T is the set of all training bags; and CT is the set of training bags belonging 
 
 Using the framework, you first need to declare the variables involve in the mathematical expression. Then, you define the membership function relying on the framework's classes:
 <pre><code>
-  Var <Integer>  C = new Var();   // target class label  
-  Var <Instance> X = new Var();   // bag with unknown label 
-  Var <Instance> B = new Var();   // a bag  
-  Var <Instance> x = new Var();   // an instance 
-  Var <Instance> y = new Var();   // another instance 
-  Var <Instances> T = new Var(); // the training samples
+  Var <Integer> C = new Var();    // target class label  
+  Var <Instance> X = new Var();    // bag with unknown label 
+  Var <Instance> B = new Var();    // a bag  
+  Var <Instance> x = new Var();    // an instance 
+  Var <Instance> y = new Var();    // another instance 
+  Var <Instances> T = new Var();    // the training samples
   
   setMembership(new MembershipToClass(X, T, C, 
             new Max(new InstancesFromBag(x, X), 
@@ -35,3 +35,16 @@ Using the framework, you first need to declare the variables involve in the math
             new Max(new InstancesFromBag(y, B),
             new CosineSimilarity(x, y))))));
 </code></pre>
+
+Usage cases:
+- Vluymans, S., Sanchez Tarrago, D., Saeys, Y., Cornelis, C., Herrera, F.: Fuzzy Multi-Instance Classifiers. IEEE Transactions on Fuzzy Systems. 24, 1395–1409 (2016). <a href="https://ieeexplore.ieee.org/document/7378303">(link)</a>
+- Vluymans, S., Sanchez Tarrago, D., Saeys, Y., Cornelis, C., Herrera, F.: Fuzzy rough classifiers for class imbalanced multi-instance data. Pattern Recognition. 53, 36–45 (2016). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320315004446">(link)</a>
+
+Developed with:
+- Java 1.8
+- NetBeans IDE 8.2
+
+Dependencies:
+- Weka 3.7
+- <a href="https://github.com/dstarrago/rough-sets">RoughSets</a>
+
