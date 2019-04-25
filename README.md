@@ -22,16 +22,16 @@ T is the set of all training bags; and CT is the set of training bags belonging 
 
 Using the framework, you first need to declare the variables involve in the mathematical expression. Then, you define the membership function relying on the framework's classes:
 <pre><code>
-  Var <Integer> CL = new Var();   // target class label  
+  Var <Integer>  C = new Var();   // target class label  
   Var <Instance> X = new Var();   // bag with unknown label 
   Var <Instance> B = new Var();   // a bag  
   Var <Instance> x = new Var();   // an instance 
   Var <Instance> y = new Var();   // another instance 
-  Var <Instances> BB = new Var(); // the training samples
+  Var <Instances> T = new Var(); // the training samples
   
-  setMembership(new MembershipToClass(X, BB, CL, 
+  setMembership(new MembershipToClass(X, T, C, 
             new Max(new InstancesFromBag(x, X), 
-            new Average(new BagsFromClass(B, BB, CL),
+            new Average(new BagsFromClass(B, T, C),
             new Max(new InstancesFromBag(y, B),
             new CosineSimilarity(x, y))))));
 </code></pre>
