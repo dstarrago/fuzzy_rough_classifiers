@@ -10,5 +10,27 @@ The framework facilitates the design of multiple-instance classification algorit
 - aggregators that iterate over, for example, all instances in a bag, or a set of bags, applying a numerical operation on them
 - weighting schemes for weighted average aggregation
 - bag membership and class membership functions
+- variables
 
+Usage example:
 
+Lets consider the membership function M of a sample bag X to the class C:
+
+<img src="membfunction.png" alt="Membership Function">
+
+T is the set of all training bags; and CT is the set of training bags belonging to class C.
+
+Using the framework, you first need to declare the variables involve in the mathematical expression. Then, you define the membership function relying on the framework's classes:
+
+  Var <Integer> CL = new Var();   // target class label
+  Var <Instance> X = new Var();   // bag with unknown label
+  Var <Instance> B = new Var();   // a bag
+  Var <Instance> x = new Var();   // an instance
+  Var <Instance> y = new Var();   // another instance
+  Var <Instances> BB = new Var(); // the training samples
+
+  setMembership(new MembershipToClass(X, BB, CL,
+            new Max(new InstancesFromBag(x, X),
+            new Average(new BagsFromClass(B, BB, CL),
+            new Max(new InstancesFromBag(y, B),
+            new CosineSimilarity(x, y))))));
