@@ -1,2 +1,2 @@
-# fuzzy_rough_classifiers
-Framework for developing fuzzy and fuzzy-rough algorithms for multiple instance classification problems
+# Fuzzy-Rough Classifiers
+Framework for developing fuzzy and fuzzy-rough algorithms for multiple-instance classification problems
