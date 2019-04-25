@@ -46,5 +46,4 @@ Developed with:
 
 Dependencies:
 - Weka 3.7
-- <a href="https://github.com/dstarrago/rough-sets">RoughSets</a>
 
